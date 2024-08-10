@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+genai.configure(api_key=os.getenv("Add your api key"))
 
 def get_pdf_text(pdf_docs):
     text = ""
